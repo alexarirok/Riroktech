@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Rirok Technologies</title>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <title>Rirok Technologies </title>
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
@@ -32,15 +33,24 @@
                         <a href="#" class="nav-link">Our Services</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Contacts</a>
+                            <a href="#" class="nav-link">Contacts</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Customer Portal</a>
+                        <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Customer Portal
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="register.html">Register</a>
+                            <a class="dropdown-item" href="login.html">Login</a>
+                        </div>
+                        </div>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    
     <div id="slides" class="carousel slide" data-ride="carousel">
         <ul class="carousel-indicators">
             <li data-target="#slides" data-slide-to="active"></li>
@@ -101,36 +111,42 @@
     </div>
     <div class="container-fluid padding">
         <div class="row text-center padding">
-            <div class="col-xs-12 col-sm-6 col-md-2">
+            <div class="col-xs-12 col-sm-6 col-md-2 col-lg-4">
                 <img src="images/dcc.png">
                 <h3>Data Center Services</h3>
                 <p>Our iFortress data center solution is a green, energy-efficient modular data center 
                     that is assembled in the field and easily scales to any size, giving you maximum flexibility.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-2">
+            <div class="col-xs-12 col-sm-6 col-md-2 col-lg-4">
                 <img src="images/vr.png">
                 <h3>3D Print & VR</h3>
                 <p>Implement the latest innovations, like Virtual Reality/Augmented Reality (VR/AR), 3D Printing, and Artificial Intelligence (AI).</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-2">
+            <div class="col-xs-12 col-sm-6 col-md-2 col-lg-4">
                 <img src="images/sto.png">
                 <h3>Storage Solutions</h3>
                 <p>Rirok Tech helps solve data storage challenges, and varied business requirements, with advanced modular data centers, hybrid cloud, and hyper-converged solutions.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-2">
+            <div class="col-xs-12 col-sm-6 col-md-2 col-lg-4">
                 <img src="images/ci.png">
                 <h3>Configuration and Imaging</h3>
                 <p>Customized hardware, software and server configurations, as well as network builds and image management/deployment, ensure that your business has the right technologies.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-2">
+            <div class="col-xs-12 col-sm-6 col-md-2 col-lg-4">
                 <img src="images/ss.png">
                 <h3>Security Solutions</h3>
                 <p>Our solutions and technical expertise help uncover the security risks present in your infrastructure. Learn how we assess, plan and implement the right technologies to protect your environment.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-2">
+            <div class="col-xs-12 col-sm-6 col-md-2 col-lg-4">
                 <img src="images/ps.png">
                 <h3>Procurement Services</h3>
                 <p>With access to 500+ manufacturers’ solutions, we have the right technologies to meet your unique needs and the expertise to configure them to your specifications.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
             </div>
         </div>
         <hr class="my-4">
@@ -154,7 +170,7 @@
     <hr class="my-4">
     <figure>
         <div class="fixed-wrap">
-            <div id="fixed">
+            <div id="fixed" style="background-image: url(images/c.jpeg)">
             </div>
         </div>
     </figure>
@@ -173,7 +189,7 @@
             <div class="col-12">
                 <h1 class="display-4">Meet the Team</h1>
             </div>
-            <hr>
+            <hr class="my-4">
         </div>
     </div>
     <div class="container-fluid padding">
@@ -227,6 +243,7 @@
                 <div class="col-lg-6">
                     <img src="images/com.jpeg" class="img-fluid" >
                 </div>
+                <hr class="my-4">
             </div>
     </div>
     <div class="container-fluid padding">
@@ -237,7 +254,7 @@
             <div class="col-12 social padding">
                 <a href="#"> <i class="fa fa-facebook"></i></a>
                 <a href="#"> <i class="fa fa-twitter"></i></a>
-                <a href="#"> <i class="fa fa-google-plus-g"></i></a>
+                <a href="#"> <i class="fa fa-google-plus"></i></a>
                 <a href="#"> <i class="fa fa-instagram"></i></a>
                 <a href="#"> <i class="fa fa-youtube"></i></a>
                 <a href="#"> <i class="fa fa-envelope"></i></a>
@@ -246,8 +263,10 @@
     </div>
     <footer>
         <div class="container-fluid padding">
+            <div class="footerer">
             <div class="row text-center">
-                <div class="col-4">
+               
+                <div class="col-md-4">
                     <img src="images/riroktech.png" >
                     <hr class="light">
                     <p>(254) 715 625 991</p>
@@ -257,27 +276,29 @@
                 </div>
                 <div class="col-md-4">
                     <hr class="light">
-                    <h5>Our Hours</h5>
+                    <h5 class="footerer">Our Hours</h5>
                     <hr class="light">
                     <p>Monday - Thursday: 8am - 9pm</p>
                     <p>Friday: 8am - 6pm </p>
                     <p>Sunday: 9am - 7pm </p>
                 </div>
                 <div class="col-md-4">
-                        <hr class="light">
-                        <h5>Service Areas</h5>
-                        <hr class="light">
-                        <p>Nairobi, Kenya</p>
-                        <p>Nakuru, Kenya</p>
-                        <p>Mombasa, Kenya</p>
-                        <p>Kampala, Uganda</p>
+                    <hr class="light">
+                    <h5 class="footerer">Service Areas</h5>
+                    <hr class="light">
+                    <p>Nairobi, Kenya</p>
+                    <p>Nakuru, Kenya</p>
+                    <p>Mombasa, Kenya</p>
+                    <p>Kampala, Uganda</p>
                 </div>
                 <div class="col-12">
                     <hr class="light">
                     <h5>&copyriroktech.com</h5>
                 </div>
             </div>
+            </div>
         </div>
     </footer>
+    
 </body>
 </html>
